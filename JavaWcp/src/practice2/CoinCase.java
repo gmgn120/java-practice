@@ -59,4 +59,23 @@ public class CoinCase {
 				+ (Yen5 * 5) + Yen1;
 	}
 
+	public int GetAmount(int kind) {
+		switch (kind) {
+		case 500:
+			return Yen500 * 500;
+		case 100:
+			return Yen100 * 100;
+		case 50:
+			return Yen50 * 50;
+		case 10:
+			return Yen10 * 10;
+		case 5:
+			return Yen5 * 5;
+		case 1:
+			return Yen1 * 1;
+		}
+
+		return 0;
+	}
+
 }
